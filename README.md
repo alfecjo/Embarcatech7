@@ -21,26 +21,7 @@ ___
 
 📌 Descrição
 
-Este teste inicial consiste em fazer um LED piscar utilizando a Raspberry Pi Pico.
-
-O código foi desenvolvido em C/C++ e testado no ambiente Bitdoglab.
-
-📝 Documentar as dependências e configurações do ambiente.
-
-Código completo em C: blink_bdl.c
-Arquivo CMake: Cmakefiles.txt 
-
-🔧 Status
-
-🚧 Testado
-
-![Projeto final - teste0002](teste0002.jpg)
-___
-🚀 Adicionando teste0002 Bitdoglab - button_buzzer_bdl
-
-📌 Descrição
-
-Este teste inicial consiste em fazer um Botão que aciona o buzzer utilizando a Raspberry Pi Pico.
+Este teste inicial consiste em fazer um Botão A que aciona o Buzzer A utilizando a Raspberry Pi Pico.
 
 O código foi desenvolvido em C/C++ e testado no ambiente Bitdoglab.
 
@@ -55,7 +36,7 @@ Arquivo CMake: Cmakefiles.txt
 
 ![Projeto final - teste0002](teste0002.jpg)
 ___
-🚀 Adicionando teste0001 Bitdoglab - blink_rgb_bdl
+🚀 Adicionando teste0003 Bitdoglab - blink_rgb_bdl
 
 📌 Descrição
 
@@ -72,13 +53,13 @@ Arquivo CMake: Cmakefiles.txt
 
 🚧 Testado
 
-![Projeto final - teste0002](teste0003.jpg)
+![Projeto final - teste0003](teste0003.jpg)
 ___
-🚀 Adicionando teste0001 Bitdoglab - buzzer_bdl
+🚀 Adicionando teste0004 Bitdoglab - buzzer_bdl
 
 📌 Descrição
 
-Este teste inicial consiste em ao precionar o Botão B emitir um beep com duração especificada, utilizando a Raspberry Pi Pico.
+Este teste inicial consiste em ao precionar o Botão B e Buzzer B emitir um beep com duração especificada, utilizando a Raspberry Pi Pico.
 
 O código foi desenvolvido em C/C++ e testado no ambiente Bitdoglab.
 
@@ -91,7 +72,7 @@ Arquivo CMake: Cmakefiles.txt
 
 🚧 Testado
 
-![Projeto final - teste0002](teste0004.jpg)
+![Projeto final - teste0004](teste0004.jpg)
 ___
 
 📋 Lista de Testes
