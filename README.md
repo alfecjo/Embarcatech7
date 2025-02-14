@@ -74,6 +74,25 @@ Arquivo CMake: Cmakefiles.txt
 
 ![Projeto final - teste0004](teste0004.jpg)
 ___
+🚀 Adicionando teste0004 Bitdoglab - ssd1306_bdl
+
+📌 Descrição
+
+Este teste inicial consiste em ao precionar o Botão B e Buzzer B emitir um beep com duração especificada, utilizando a Raspberry Pi Pico.
+
+O código foi desenvolvido em C/C++ e testado no ambiente Bitdoglab.
+
+📝 Documentar as dependências e configurações do ambiente.
+
+Código completo em C: ssd1306_bdl.c
+Arquivo CMake: Cmakefiles.txt 
+
+🔧 Status
+
+🚧 Testado
+
+![Projeto final - teste0005](teste0005.jpg)
+___
 
 📋 Lista de Testes
 
@@ -81,3 +100,4 @@ ___
 🟢 Teste 0002 - button_buzzer_bdl
 🟢 Teste 0003 - blink_rgb_bdl
 🟢 Teste 0004 - buzzer_bdl
+🟢 Teste 0004 - ssd1306_bdl
