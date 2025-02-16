@@ -115,8 +115,6 @@ Arquivo CMake: Cmakefiles.txt
 🔧 Status
 
 🚧 Testado
-
-![Projeto final - teste0006](teste0006.jpg)
 ___
 
 📋 Lista de Testes
