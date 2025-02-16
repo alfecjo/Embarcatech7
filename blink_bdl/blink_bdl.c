@@ -13,20 +13,32 @@
 #endif
 
 #ifndef LED_DELAY_MS
-#define LED_DELAY_MS 250
+#define LED_DELAY_MS 10250
 #endif
 
-#ifndef MY_LED_PIN
-#define MY_LED_PIN 12
+#ifndef LED_PIN_LIGHT
+#define LED_PIN_LIGHT 8
+#endif
+
+#ifndef LED_PIN_FAN
+#define LED_PIN_FAN 9
 #endif
 
 // Perform initialisation
-int pico_led_init(void) {
-#if defined(MY_LED_PIN)
+int pico_led_init(void)
+{
+#if defined(LED_PIN_LIGHT)
     // A device like Pico that uses a GPIO for the LED will define PICO_DEFAULT_LED_PIN
     // so we can use normal GPIO functionality to turn the led on and off
-    gpio_init(MY_LED_PIN);
-    gpio_set_dir(MY_LED_PIN, GPIO_OUT);
+    gpio_init(LED_PIN_LIGHT);
+    gpio_set_dir(LED_PIN_LIGHT, GPIO_OUT);    
+#endif
+
+#if defined(LED_PIN_FAN)
+    // A device like Pico that uses a GPIO for the LED will define PICO_DEFAULT_LED_PIN
+    // so we can use normal GPIO functionality to turn the led on and off
+    gpio_init(LED_PIN_FAN);
+    gpio_set_dir(LED_PIN_FAN, GPIO_OUT);
     return PICO_OK;
 #elif defined(CYW43_WL_GPIO_LED_PIN)
     // For Pico W devices we need to initialise the driver etc
@@ -35,23 +47,42 @@ int pico_led_init(void) {
 }
 
 // Turn the led on or off
-void pico_set_led(bool led_on) {
-#if defined(MY_LED_PIN)
+void pico_set_led_light(bool led_on)
+{
+#if defined(LED_PIN_LIGHT)
     // Just set the GPIO on or off
-    gpio_put(MY_LED_PIN, led_on);
+    gpio_put(LED_PIN_LIGHT, led_on);
 #elif defined(CYW43_WL_GPIO_LED_PIN)
     // Ask the wifi "driver" to set the GPIO on or off
     cyw43_arch_gpio_put(CYW43_WL_GPIO_LED_PIN, led_on);
 #endif
 }
 
-int main() {
+// Turn the led on or off
+void pico_set_led_fan(bool led_on)
+{
+#if defined(LED_PIN_FAN)
+    // Just set the GPIO on or off
+    gpio_put(LED_PIN_FAN, led_on);
+#elif defined(CYW43_WL_GPIO_LED_PIN)
+    // Ask the wifi "driver" to set the GPIO on or off
+    cyw43_arch_gpio_put(CYW43_WL_GPIO_LED_PIN, led_on);
+#endif
+}
+
+int main()
+{
     int rc = pico_led_init();
     hard_assert(rc == PICO_OK);
-    while (true) {
-        pico_set_led(true);
+    while (true)
+    {
+        pico_set_led_light(true);
         sleep_ms(LED_DELAY_MS);
-        pico_set_led(false);
+        pico_set_led_light(false);
+        
+
+        pico_set_led_fan(true);
         sleep_ms(LED_DELAY_MS);
+        pico_set_led_fan(false);
     }
 }
