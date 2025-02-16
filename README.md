@@ -7,7 +7,8 @@ ___
 
 📌 Descrição
 
-Este teste inicial consiste em fazer um LED piscar utilizando a Raspberry Pi Pico.
+Este teste inicial consiste em fazer um LED piscar utilizando a Raspberry Pi Pico. Consiste na simulação de utilizar os GPIO'S
+que deverão acionar a LED_PIN_LIGHT(iluminação geradora de calor) e a LED_PIN_FAN(ventilação retirando ar quente do ambiente).
 
 O código foi desenvolvido em C/C++ e testado no ambiente Bitdoglab.
 
