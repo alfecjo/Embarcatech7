@@ -2,6 +2,10 @@
 add_executable(ssd1306_oled_bdl
     src/ssd1306_oled_bdl.c
     src/ssd1306.c
+    src/adc_setup.c
+    src/i2c_setup.c
+    src/oled_setup.c
+    src/temperature.c
 )
 
 # Diretórios de inclusão
