@@ -50,14 +50,14 @@ ___
  
 ### Em resumo, manter a temperatura estável de forma automática e permanente dentro dos valores apresentados.
 
-### 📝**O código foi desenvolvido em C/C++ e testado no ambiente Bitdoglab.**
+## 📝 ** O código foi desenvolvido em C/C++ e testado no ambiente Bitdoglab. **
 
-## 🔧 **Status**
+## 🔧 ** Status **
 
-## 🚧 **Testado**
+## 🚧 Testado 🟢
 ___
 
-## 📋 **Lista de Testes que contribuiram para a criação do projeto:**
+## 📋 ** Lista de Testes que contribuiram para a criação do projeto: **
 
 ### 🟢 Teste 0001 - blink_bdl
 ### 🟢 Teste 0002 - button_buzzer_bdl
