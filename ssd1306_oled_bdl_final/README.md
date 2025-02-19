@@ -6,12 +6,14 @@ código pode não apresentar o comportamento desejado!
 A instalação utilizada para construção desta solução, bem como dos testes segue a lógica a seguir:
 
 ```cmake
+#Versionamento
 cmake_minimum_required(VERSION 3.12)
 
 # Pull in SDK (must be before project)
 include(pico_sdk_import.cmake)
 include(pico_extras_import_optional.cmake)
 
+#Raiz do projeto
 project(pico_examples C CXX ASM)
 
 set(CMAKE_C_STANDARD 11)
@@ -31,8 +33,8 @@ endif()
 # Initialize the SDK
 pico_sdk_init()
 
+#Adiciona script customizado
 include(example_auto_set_url.cmake)
-
 
 # Adiciona o executável
 add_executable(ssd1306_oled_bdl
@@ -94,3 +96,5 @@ ___
 ### 🟢 Teste 0004 - buzzer_bdl
 ### 🟢 Teste 0005 - ssd1306_bdl
 ### 🟢 Teste 0006 - goertzel_bdl
+
+![Projeto final - EcloPiu-Piu](EcloPiu-Piu.jpg)

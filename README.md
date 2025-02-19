@@ -31,7 +31,6 @@ pico_sdk_init()
 
 include(example_auto_set_url.cmake)
 
-
 # Adiciona o executável
 add_executable(ssd1306_oled_bdl
     src/ssd1306_oled_bdl.c
