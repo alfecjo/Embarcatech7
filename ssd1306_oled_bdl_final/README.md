@@ -49,8 +49,9 @@ ___
 ### Através de um display OLED 128x64, exibi informações de temperatura, aproveitando o sensor que há na placa.
  
 ### Em resumo, manter a temperatura estável de forma automática e permanente dentro dos valores apresentados.
+___
 
-## 📝 **O código foi desenvolvido em C/C++ e testado no ambiente Bitdoglab.**
+### 📝 **O código foi desenvolvido em C/C++ e testado no ambiente Bitdoglab.**
 
 ## 🔧 **Status**
 
