@@ -96,5 +96,5 @@ ___
 ### 🟢 Teste 0004 - buzzer_bdl
 ### 🟢 Teste 0005 - ssd1306_bdl
 ### 🟢 Teste 0006 - goertzel_bdl
-
+___
 ![Projeto final - EcloPiu-Piu](EcloPiu-Piu.jpg)
