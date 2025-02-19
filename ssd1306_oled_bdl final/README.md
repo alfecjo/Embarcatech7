@@ -61,6 +61,7 @@ pico_add_extra_outputs(ssd1306_oled_bdl)
 
 # Adiciona URL do projeto
 example_auto_set_url(ssd1306_oled_bdl)
+```
 ___
 🚀 Projeto Final
 
