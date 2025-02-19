@@ -34,14 +34,13 @@ pico_add_extra_outputs(ssd1306_oled_bdl)
 
 # Adiciona URL do projeto
 example_auto_set_url(ssd1306_oled_bdl)
-___
-```cmake
+
 if (TARGET hardware_i2c)
     add_subdirectory_exclude_platforms(ssd1306_oled_bdl)
 else()
     message("Skipping I2C examples as hardware_i2c is unavailable on this platform")
 endif()
-
+```
 ___
 🚀 Adicionando teste0006 Bitdoglab - goertzel_bdl
 
