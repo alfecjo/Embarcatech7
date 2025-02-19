@@ -42,29 +42,26 @@ else()
 endif()
 ```
 ___
-🚀 Adicionando teste0006 Bitdoglab - goertzel_bdl
+## 🚀 1 – Apresentação do projeto.
 
-📌 Descrição
+### 📌 O projeto idealiza uma incubadora para ovos, compacta para uso doméstico, automatizado que controla a temperatura para garantir um ambiente ideal para a eclosão. O projeto utiliza um Raspberry Pi Pico W – Bitdoglab, para monitoramento e controle da temperatura. Consiste em acionar uma lâmpada resistiva para aquecimento e ventoinha para circulação de ar, consequentemente resfriando o ambiente.
+### Com capacidade para 36 ovos e medindo: 20cm de altura, 15cm de largura e 45cm de comprimento, a incubadora pode ser aplicada tanto para uso doméstico quanto para pequenas criações comerciais de aves, aumentando a taxa de sucesso na incubação.
+### Através de um display OLED 128x64, exibi informações de temperatura, aproveitando o sensor que há na placa.
+ 
+### Em resumo, manter a temperatura estável de forma automática e permanente dentro dos valores apresentados.
 
-Este teste inicial consiste em aplicar o Goertzel para detectar a frequência 261 Hz (Dó médio - C4) utilizando a Raspberry Pi Pico.
+### 📝O código foi desenvolvido em C/C++ e testado no ambiente Bitdoglab.
 
-O código foi desenvolvido em C/C++ e testado no ambiente Bitdoglab.
+## 🔧 Status
 
-📝 Documentar as dependências e configurações do ambiente.
-
-Código completo em C: goertzel_bdl.c
-Arquivo CMake: Cmakefiles.txt 
-
-🔧 Status
-
-🚧 Testado
+## 🚧 Testado
 ___
 
-📋 Lista de Testes
+## 📋 Lista de Testes que contribuiram para a criação do projeto:
 
-🟢 Teste 0001 - blink_bdl
-🟢 Teste 0002 - button_buzzer_bdl
-🟢 Teste 0003 - blink_rgb_bdl
-🟢 Teste 0004 - buzzer_bdl
-🟢 Teste 0005 - ssd1306_bdl
-🟢 Teste 0006 - goertzel_bdl
+### 🟢 Teste 0001 - blink_bdl
+### 🟢 Teste 0002 - button_buzzer_bdl
+### 🟢 Teste 0003 - blink_rgb_bdl
+### 🟢 Teste 0004 - buzzer_bdl
+### 🟢 Teste 0005 - ssd1306_bdl
+### 🟢 Teste 0006 - goertzel_bdl
