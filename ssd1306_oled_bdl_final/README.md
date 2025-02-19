@@ -42,7 +42,7 @@ else()
 endif()
 ```
 ___
-## 🚀 **Apresentação do projeto.**
+# 🚀 **Apresentação do projeto.**
 
 ### 📌 O projeto idealiza uma incubadora para ovos, compacta para uso doméstico, automatizado que controla a temperatura para garantir um ambiente ideal para a eclosão. O projeto utiliza um Raspberry Pi Pico W – Bitdoglab, para monitoramento e controle da temperatura. Consiste em acionar uma lâmpada resistiva para aquecimento e ventoinha para circulação de ar, consequentemente resfriando o ambiente.
 ### Com capacidade para 36 ovos e medindo: 20cm de altura, 15cm de largura e 45cm de comprimento, a incubadora pode ser aplicada tanto para uso doméstico quanto para pequenas criações comerciais de aves, aumentando a taxa de sucesso na incubação.
