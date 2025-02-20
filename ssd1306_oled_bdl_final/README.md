@@ -1,5 +1,5 @@
 ### Observação importante:
-Pode ser necessário algumas alterações no arquivo CMakeLists.txt, haja visto que cada instalação
+Este é o repositório que contém a versão final do projeto: 'Eclo-Piu-Piu'. Pode ser necessário algumas alterações no arquivo CMakeLists.txt, haja visto que cada instalação
 do ambiente segue características individuais de cada projetista. Sem essas alterações o
 código pode não apresentar o comportamento desejado!
 
