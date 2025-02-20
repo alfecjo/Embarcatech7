@@ -12,32 +12,38 @@
 #include "oled_setup.h"
 #include "temperature.h"
 
-// Definição dos pinos de saída
-#define LIGHT_PIN 8
-#define FAN_PIN 9
+// Definição dos pinos de saída aos atuadores
+#define FAN_PIN 8
+#define LIGHT_PIN 9
 
 // Limites de temperatura com histerese
-#define TEMP_ON  38.0  // Liga a ventoinha acima de 38°C
-#define TEMP_OFF 36.0  // Desliga a ventoinha abaixo de 36°C
+#define TEMP_ON 38.0  // Liga a ventoinha acima de 38°C
+#define TEMP_OFF 36.0 // Desliga a ventoinha abaixo de 36°C
 
 // Estado dos dispositivos
 bool fan_on = false;
 bool light_on = false;
 
 // Callback da interrupção do timer
-bool temperatura_callback(struct repeating_timer *t) {
-    float temperatura = read_temperature();  // Lê a temperatura
+bool temperatura_callback(struct repeating_timer *t)
+{
+    float temperatura = read_temperature(); // Lê a temperatura
 
     // Lógica com histerese
-    if (temperatura >= TEMP_ON) {
-        if (!fan_on) {  // Evita ligar se já estiver ligado
+    if (temperatura >= TEMP_ON)
+    {
+        if (!fan_on)
+        { // Evita ligar se já estiver ligado
             gpio_put(FAN_PIN, 1);
             fan_on = true;
         }
-        gpio_put(LIGHT_PIN, 0);  // Garante que a luz está apagada
+        gpio_put(LIGHT_PIN, 0); // Garante que a luz está apagada
         light_on = false;
-    } else if (temperatura <= TEMP_OFF) {
-        if (fan_on) {  // Evita desligar se já estiver desligado
+    }
+    else if (temperatura <= TEMP_OFF)
+    {
+        if (fan_on)
+        { // Evita desligar se já estiver desligado
             gpio_put(FAN_PIN, 0);
             fan_on = false;
         }
@@ -48,7 +54,7 @@ bool temperatura_callback(struct repeating_timer *t) {
     // Atualiza o display OLED
     update_oled(temperatura);
 
-    return true;  // Mantém o timer rodando
+    return true; // Mantém o timer rodando
 }
 
 void setup_initi_pin(void)
@@ -62,6 +68,7 @@ void setup_initi_pin(void)
 
 int main()
 {
+    // Inicializa todos stdio vinculados ao binário
     stdio_init_all();
 
     // Configurações iniciais
@@ -74,10 +81,10 @@ int main()
     struct repeating_timer timer;
     add_repeating_timer_ms(15000, temperatura_callback, NULL, &timer);
 
-    while (1) {
-        sleep_ms(60000);  // Mantém o programa rodando sem travar o processador
+    while (1)
+    {
+        sleep_ms(60000); // Mantém o programa rodando sem travar o processador
     }
-
 
     return 0;
 }
