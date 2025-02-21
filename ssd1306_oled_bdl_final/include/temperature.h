@@ -1,6 +1,8 @@
-#ifndef TEMPERATURE_H
-#define TEMPERATURE_H
+#ifndef TEMPERATURE_H  // Verifica se o macro TEMPERATURE_H não está definido
+#define TEMPERATURE_H  // Define o macro TEMPERATURE_H para evitar a inclusão múltipla do arquivo de cabeçalho
 
-float read_temperature(void);
+// Declaração da função 'read_temperature', sua implementação encontra-se em temperature.c
+// Esta função será usada para ler a temperatura do sensor, retornando um valor float.
+float read_temperature(void);  // A função read_temperature retorna um valor float representando a temperatura lida do sensor
 
-#endif
+#endif  // Fim da diretiva de inclusão condicional

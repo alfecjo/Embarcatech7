@@ -11,13 +11,13 @@ Para pinagem recorra a figura 7 da proposta de projeto, bem como: Figura 12: Cir
 
 void setup_adc()
 {
-    adc_init();                        // Inicializa o ADC
-    //adc_set_temp_sensor_enabled(true); // Habilita o sensor de temperatura interno
-    //adc_select_input(4);               // Canal 4 é o sensor de temperatura interno
-    
-    //Para uso do sensor LM35 É NECESSÁRIO COMENTAR as duas funções acima e DESCOMENTAR 
-    //as duas abaixo, bem como observar orientações do arquivo 'temperature.c'.
+    adc_init(); // Inicializa o ADC
+    // adc_set_temp_sensor_enabled(true);    // Habilita o sensor de temperatura interno
+    // adc_select_input(4);                  // Canal 4 é o sensor de temperatura interno
+
+    // Para uso do sensor LM35 É NECESSÁRIO COMENTAR as duas funções acima e DESCOMENTAR
+    // as duas abaixo, bem como observar orientações do arquivo 'temperature.c'.
 
     adc_set_temp_sensor_enabled(false); // Desativa o sensor de temperatura interno
-    adc_select_input(0);  // Escolhe o ADC0 (GP26) - Selecionar um ADC externo (GP26, GP27 ou GP28).
+    adc_select_input(0);                // Escolhe o ADC0 (GP26) - Selecionar um ADC externo (GP26, GP27 ou GP28).
 }
