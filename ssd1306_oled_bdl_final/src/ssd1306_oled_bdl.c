@@ -77,7 +77,7 @@ int main()
     setup_oled();
     setup_initi_pin();
 
-    // Criando o timer que chamará a função a cada 1 segundo
+    // Criando o timer que chamará a função a cada 15 segundos
     struct repeating_timer timer;
     add_repeating_timer_ms(15000, temperatura_callback, NULL, &timer);
 

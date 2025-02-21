@@ -19,5 +19,5 @@ void setup_adc()
     // as duas abaixo, bem como observar orientações do arquivo 'temperature.c'.
 
     adc_set_temp_sensor_enabled(false); // Desativa o sensor de temperatura interno
-    adc_select_input(0);                // Escolhe o ADC0 (GP26) - Selecionar um ADC externo (GP26, GP27 ou GP28).
+    adc_select_input(2);                // Escolhe o ADC0 (GP28) - Selecionar um ADC externo (GP26, GP27 ou GP28).
 }
