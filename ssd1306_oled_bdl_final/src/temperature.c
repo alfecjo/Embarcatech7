@@ -9,7 +9,9 @@ em relação ao sensor interno do RP2040.
 Para pinagem recorra a figura 7 da proposta de projeto.
 */
 
-float read_temperature(void)
+// Garante que uma função seja executada diretamente da RAM em vez da Flash.
+// útil principalmente para funções críticas de tempo real ou para evitar atrasos devido ao acesso à memória Flash.
+float __not_in_flash_func(read_temperature)(void)
 {
     const float conversion_factor = 3.3f / (1 << 12); // Fator de conversão para 12 bits
     uint16_t raw = adc_read();                        // Lê o valor bruto do ADC
