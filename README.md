@@ -31,14 +31,9 @@ pico_sdk_init()
 
 include(example_auto_set_url.cmake)
 
-# Adiciona o executável
-add_executable(ssd1306_oled_bdl
-    src/ssd1306_oled_bdl.c
-    src/ssd1306.c
-    src/adc_setup.c
-    src/i2c_setup.c
-    src/oled_setup.c
-    src/temperature.c
+# Adiciona o executável que deve conter o teste alvo, como o exemplo abaixo
+add_executable(blink_bdl    
+    blink_bdl.c
 )
 
 # Diretórios de inclusão
