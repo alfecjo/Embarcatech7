@@ -166,11 +166,11 @@ Este teste foi desenvolvido a partir do chassi do projeto principal, apresentado
 
 A estrutura do código permite uma intercambiabilidade eficiente, evidenciando como a separação de responsabilidades entre funcionalidades possibilita a reutilização de partes do sistema em diferentes soluções. Dessa forma, o próprio chassi pode servir como base para novas aplicações, mesmo que tenham funcionalidades completamente distintas.
 
-Principais benefícios dessa abordagem
-✔ Reutilização de código – Reduz retrabalho e melhora a eficiência.
-✔ Velocidade no desenvolvimento – Soluções podem ser construídas rapidamente.
-✔ Redução de custos – Menos tempo e esforço necessários.
-✔ Garantia de qualidade – Código já testado e validado.
+### Principais benefícios dessa abordagem  
+✔ **Reutilização de código** – Reduz retrabalho e melhora a eficiência.  
+✔ **Velocidade no desenvolvimento** – Soluções podem ser construídas rapidamente.  
+✔ **Redução de custos** – Menos tempo e esforço necessários.  
+✔ **Garantia de qualidade** – Código já testado e validado.  
 
 Essa estratégia não apenas otimiza o desenvolvimento, mas também torna os sistemas mais modulares, escaláveis e sustentáveis a longo prazo. 🚀
 
@@ -209,10 +209,10 @@ ___
 
 📋 Lista de Testes
 
-🟢 Teste 0001 - blink_bdl
-🟢 Teste 0002 - button_buzzer_bdl
-🟢 Teste 0003 - blink_rgb_bdl
-🟢 Teste 0004 - buzzer_bdl
-🟢 Teste 0005 - ssd1306_bdl
-🟢 Teste 0006 - dht22_bdl
-🟢 Teste 0007 - goertzel_bdl
+✔ ** 🟢 Teste 0001 - blink_bdl
+✔ ** 🟢 Teste 0002 - button_buzzer_bdl
+✔ ** 🟢 Teste 0003 - blink_rgb_bdl
+✔ ** 🟢 Teste 0004 - buzzer_bdl
+✔ ** 🟢 Teste 0005 - ssd1306_bdl
+✔ ** 🟢 Teste 0006 - dht22_bdl
+✔ ** 🟢 Teste 0007 - goertzel_bdl
