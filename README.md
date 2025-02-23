@@ -207,12 +207,12 @@ Arquivo CMake: Cmakefiles.txt
 🚧 Testado
 ___
 
-📋 Lista de Testes
+### 📋 Lista de Testes
 
-✔ ** 🟢 Teste 0001 - blink_bdl
-✔ ** 🟢 Teste 0002 - button_buzzer_bdl
-✔ ** 🟢 Teste 0003 - blink_rgb_bdl
-✔ ** 🟢 Teste 0004 - buzzer_bdl
-✔ ** 🟢 Teste 0005 - ssd1306_bdl
-✔ ** 🟢 Teste 0006 - dht22_bdl
-✔ ** 🟢 Teste 0007 - goertzel_bdl
+✔ **🟢 Teste 0001 - blink_bdl**
+✔ **🟢 Teste 0002 - button_buzzer_bdl**
+✔ **🟢 Teste 0003 - blink_rgb_bdl**
+✔ **🟢 Teste 0004 - buzzer_bdl**
+✔ **🟢 Teste 0005 - ssd1306_bdl**
+✔ **🟢 Teste 0006 - dht22_bdl**
+✔ **🟢 Teste 0007 - goertzel_bdl**
