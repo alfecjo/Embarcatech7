@@ -206,7 +206,6 @@ Arquivo CMake: Cmakefiles.txt
 
 🚧 Testado
 ___
-
 ### 📋 Lista de Testes
 
 ✔ **🟢 Teste 0001 - blink_bdl**
