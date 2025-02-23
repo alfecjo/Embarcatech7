@@ -158,7 +158,38 @@ Arquivo CMake: Cmakefiles.txt
 
 ![Projeto final - teste0005](teste0005.jpg)
 ___
-🚀 Adicionando teste0006 Bitdoglab - goertzel_bdl
+🚀 Adicionando teste0006 Bitdoglab - dh22_bdl
+
+📌 Descrição
+
+Este teste foi desenvolvido a partir do chassi do projeto principal, apresentado à Embarcatec. Embora seja um teste, sua importância é comparável – ou até superior – à do projeto final, pois demonstra um dos princípios mais valiosos no desenvolvimento de software: o reaproveitamento de código.
+
+A estrutura do código permite uma intercambiabilidade eficiente, evidenciando como a separação de responsabilidades entre funcionalidades possibilita a reutilização de partes do sistema em diferentes soluções. Dessa forma, o próprio chassi pode servir como base para novas aplicações, mesmo que tenham funcionalidades completamente distintas.
+
+Principais benefícios dessa abordagem
+✔ Reutilização de código – Reduz retrabalho e melhora a eficiência.
+✔ Velocidade no desenvolvimento – Soluções podem ser construídas rapidamente.
+✔ Redução de custos – Menos tempo e esforço necessários.
+✔ Garantia de qualidade – Código já testado e validado.
+
+Essa estratégia não apenas otimiza o desenvolvimento, mas também torna os sistemas mais modulares, escaláveis e sustentáveis a longo prazo. 🚀
+
+Esta aplicação poderia com folga ser o projeto principal da entrega...
+
+O código foi desenvolvido em C/C++ e testado no ambiente Bitdoglab.
+
+📝 Documentar as dependências e configurações do ambiente.
+
+Código completo em C: dht22_bdl.c
+Arquivo CMake: Cmakefiles.txt 
+
+🔧 Status
+
+🚧 Testado
+
+![Projeto final - teste0005](teste0006.jpg)
+___
+🚀 Adicionando teste0007 Bitdoglab - goertzel_bdl
 
 📌 Descrição
 
@@ -183,4 +214,5 @@ ___
 🟢 Teste 0003 - blink_rgb_bdl
 🟢 Teste 0004 - buzzer_bdl
 🟢 Teste 0005 - ssd1306_bdl
-🟢 Teste 0006 - goertzel_bdl
+🟢 Teste 0006 - dht22_bdl
+🟢 Teste 0007 - goertzel_bdl
