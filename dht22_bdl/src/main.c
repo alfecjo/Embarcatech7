@@ -14,7 +14,7 @@
 #define LIGHT_PIN 9 // Pino da lâmpada
 
 // GPIO utilizado para conexão de dados com o sensor DHT22
-const uint READ_PIN_DATA = 16;
+const uint READ_PIN_DATA = 28;
 
 // Definição dos limites de temperatura para controle da ventoinha
 #define TEMP_ON 38.0  // Liga a ventoinha acima de 38°C
@@ -38,7 +38,7 @@ void setup_init_pin(void)
 
 int main()
 {
-    DHT_PIN = 16; // Define o pino do sensor DHT22
+    DHT_PIN = 28; // Define o pino do sensor DHT22
     stdio_init_all(); // Inicializa a comunicação serial
     gpio_init(DHT_PIN); // Inicializa o pino do sensor DHT22
 

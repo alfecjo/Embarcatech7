@@ -11,7 +11,7 @@
 #define MAX_TIMINGS 85
 #endif
 
-int DHT_PIN = 16; // Defina aqui a variável global
+int DHT_PIN = 28; // Defina aqui a variável global
 
 
 void read_from_dht(dht_reading *result) {
